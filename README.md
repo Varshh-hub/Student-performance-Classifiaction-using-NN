@@ -1,53 +1,53 @@
 # Student Performance Classification using Neural Network
 
-A simple **Neural Network built from scratch using Python and NumPy** to classify whether a student will **Pass or Fail** based on study-related features.
+A beginner-friendly **Neural Network built from scratch using Python and NumPy** to predict whether a student is likely to **Pass or Fail** based on study-related features.
 
-This project was built to understand the **fundamentals of Neural Networks and how they learn**, without using a deep learning framework.
+The main goal of this project was to understand the **working and training process of a Neural Network from the ground up**, without relying on frameworks such as TensorFlow or PyTorch.
 
-## What I Used & Why
+## Technologies & Concepts Used
 
-* **Python** – Used as the main programming language for building the model.
-* **NumPy** – Used for matrix operations, weights, biases, forward propagation, backpropagation, and parameter updates.
-* **Dense Layers** – Used to connect the input features to the hidden layer and then to the output.
-* **ReLU Activation** – Used in the hidden layer to introduce non-linearity and help the network learn more complex patterns.
-* **Sigmoid Activation** – Used in the output layer because this is a binary classification problem. It converts the output into a probability between 0 and 1.
-* **Binary Cross-Entropy Loss** – Used to measure how far the predicted probability is from the actual Pass/Fail label.
-* **Backpropagation** – Used to calculate how much each weight and bias contributed to the prediction error.
-* **Gradient Descent** – Used to update the weights and biases so that the model gradually reduces its loss.
-* **Learning Rate** – Controls how large each parameter update is during training.
-* **Epochs** – Determines how many times the model goes through the training process.
+* **Python** – Used to implement the complete neural network and training process.
+* **NumPy** – Used for numerical computations, matrix operations, and handling model parameters.
+* **Dense Layers** – Used to build the basic structure of the neural network and pass information between layers.
+* **ReLU** – Used in the hidden layer to add non-linearity and allow the network to learn patterns from the input data.
+* **Sigmoid** – Used in the final layer to convert the model output into a probability for the binary Pass/Fail classification.
+* **Binary Cross-Entropy** – Used as the loss function to measure the difference between the predicted and actual labels.
+* **Backpropagation** – Used to calculate gradients and determine how the model parameters should be adjusted.
+* **Gradient Descent** – Used to update the weights and biases and minimize the loss during training.
+* **Learning Rate** – Controls the size of each update made to the model parameters.
+* **Epochs** – Defines how many times the model repeats the training process over the dataset.
 
-## How I Built It
+## How I Built the Model
 
-The neural network was built step by step from scratch:
+I developed the neural network step by step instead of using a pre-built deep learning library.
 
-1. **Prepared the student data** and separated the input features (`X`) and target labels (`y`).
-2. **Initialized weights and biases** for the neural network.
-3. Built the **first Dense layer** with 4 neurons.
+1. Prepared the dataset and separated the **features (`X`)** from the **target (`y`)**.
+2. Initialized the **weights and biases** for each layer.
+3. Created a **hidden Dense layer with 4 neurons**.
 4. Applied **ReLU activation** to the hidden layer.
-5. Built the **output Dense layer** with 1 neuron.
-6. Applied **Sigmoid activation** to produce the Pass/Fail probability.
-7. Calculated the **Binary Cross-Entropy loss**.
-8. Implemented **backpropagation** to calculate the gradients.
-9. Used **gradient descent** to update the weights and biases.
-10. Repeated this process for multiple **epochs** so the network could learn from the data.
+5. Added an **output Dense layer with 1 neuron**.
+6. Applied **Sigmoid activation** to generate the final probability.
+7. Calculated the **Binary Cross-Entropy loss** to measure the model's error.
+8. Performed **backpropagation** to calculate the required gradients.
+9. Applied **gradient descent** to update the weights and biases.
+10. Repeated the process across multiple **epochs** until the network learned from the training data.
 
-## How It Works
+## Neural Network Flow
 
 ```text
 Input Features
       ↓
 Dense Layer (4 Neurons)
       ↓
-ReLU Activation
+ReLU
       ↓
 Dense Layer (1 Neuron)
       ↓
-Sigmoid Activation
+Sigmoid
       ↓
-Pass/Fail Probability
+Pass/Fail Prediction
       ↓
-Binary Cross-Entropy Loss
+Loss Calculation
       ↓
 Backpropagation
       ↓
@@ -55,28 +55,29 @@ Gradient Descent
       ↓
 Update Weights & Biases
       ↓
-Repeat for Multiple Epochs
+Repeat Training
 ```
 
 ## What I Learned
 
-This project helped me understand what happens **inside a Neural Network** instead of directly using a framework.
+Building this project from scratch helped me understand the **fundamentals of Neural Networks at a practical level**.
 
-I learned:
+Through this project, I learned:
 
-* How **neurons, weights, and biases** work
-* How **forward propagation** generates predictions
-* Why **ReLU** is used in hidden layers
-* Why **Sigmoid** is suitable for binary classification
-* How **Binary Cross-Entropy** calculates classification loss
+* How **weights and biases** are used to make predictions
+* How **forward propagation** moves data through the network
+* How **activation functions** help a neural network learn non-linear patterns
+* Why **ReLU** is commonly used in hidden layers
+* Why **Sigmoid** works well for binary classification
+* How **Binary Cross-Entropy** measures classification error
 * How **backpropagation** calculates gradients
 * How **gradient descent** updates model parameters
-* How a neural network **learns by repeatedly reducing its error**
+* How a neural network improves its predictions by **minimizing loss over multiple epochs**
 * How the different components of a neural network work together during training
 
 ## Key Takeaway
 
-Building this Neural Network from scratch gave me a practical understanding of the **core architecture, mathematics, and training process of neural networks** and created a strong foundation for moving into **PyTorch and more advanced Deep Learning projects**.
+This project gave me a hands-on understanding of how a **Neural Network is structured, trained, and optimized internally**. Building it with NumPy helped me understand the concepts behind deep learning before moving on to **PyTorch and more advanced Deep Learning projects**.
 
 ## Author
 

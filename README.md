@@ -52,3 +52,10 @@ Through this project, I learned how a neural network works **internally**, inclu
 * How a neural network gradually learns through repeated training
 
 This project gave me a foundation in the **core mathematics and training process of Neural Networks** before moving on to **PyTorch**.
+
+## Author
+
+### Varsha A
+
+AI & ML Graduate | Aspiring Data Scientist & ML Engineer | Python | SQL | Machine Learning | Deep Learning | GenAI
+

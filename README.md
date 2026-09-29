@@ -32,32 +32,6 @@ I developed the neural network step by step instead of using a pre-built deep le
 9. Applied **gradient descent** to update the weights and biases.
 10. Repeated the process across multiple **epochs** until the network learned from the training data.
 
-## Neural Network Flow
-
-```text
-Input Features
-      ↓
-Dense Layer (4 Neurons)
-      ↓
-ReLU
-      ↓
-Dense Layer (1 Neuron)
-      ↓
-Sigmoid
-      ↓
-Pass/Fail Prediction
-      ↓
-Loss Calculation
-      ↓
-Backpropagation
-      ↓
-Gradient Descent
-      ↓
-Update Weights & Biases
-      ↓
-Repeat Training
-```
-
 ## What I Learned
 
 Building this project from scratch helped me understand the **fundamentals of Neural Networks at a practical level**.
